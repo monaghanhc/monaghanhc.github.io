@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Side Navigation Bar</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <!-- <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script> -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- <img src="./assets//topPicture.jpg" alt="top-picture" /> -->
+
+      <div class="sidebar">
+        <img
+          src="./assets/portfolioPic.jpg"
+          alt="Profile Picture"
+          id="profilePic"
+        />
+        <br />
+        <h3>Hunter Monaghan</h3>
+        <p>Fullstack Software Engineer</p>
+        <ul>
+          <li>
+            <a href="#top"><em class="fas fa-home"></em>Home</a>
+          </li>
+          <li>
+            <a href="#middleSection"
+              ><em class="fas fa-address-card"></em>About</a
+            >
+          </li>
+          <li>
+            <a href="#bottomSection"
+              ><em class="fas fa-project-diagram"></em>portfolio</a
+            >
+          </li>
+          <li>
+            <a href="./resume.html"><em class="fas fa-address-book"></em>Map</a>
+          </li>
+        </ul>
+        <div class="social_media">
+          <a href="https://www.facebook.com/hunter.monaghan" target="_blank"
+            ><em class="fab fa-facebook-f"></em
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/hunter-monaghan-7b039a130/"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/monaghanhc" target="_blank"
+            ><em class="fab fa-github"></em
+          ></a>
+          <a href="https://www.instagram.com/hunter_monaghan/" target="_blank"
+            ><em class="fab fa-instagram"></em
+          ></a>
+        </div>
+      </div>
+
+      <div class="main_content">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img
+              src="./assets/firstPicture-Slideshow.jpeg"
+              
+              alt="first picture"
+            />
+            <div class="text">Caption Text</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img
+              src="./assets/secondPicture-Slideshow.jpeg"
+              
+              alt="second picture"
+            />
+            <div class="text">Caption Two</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img
+              src="./assets/thirdPicture-Slideshow.jpeg"
+              
+              alt="third picture"
+            />
+            <div class="text">Caption Three</div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+
+        <!-- The dots/circles -->
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <br />
+
+        <div class="info">
+          <a name="top" id="top"></a>
+          <h1>Full-Stack Software Developer</h1>
+          <br />
+          <p>React, Express, Node, JS, CSS, Java, Python</p>
+          <!-- <div id="backgroundImage" style="background-image: url('./topPicture.jpg');"> -->
+
+          <!-- Going to import an image and a UI style for each of these break lines -->
+        </div>
+        <hr/>
+        <!-- </div> -->
+        <a class="middleSection" id="middle"></a>
+        <div class="about">
+          <p>
+            My name is Hunter Monaghan and I am a current graduate at the JRS
+            Coding School. I am currently about to graduate The College of
+            Charleston with a degree in Bachelors in the Arts in Computer
+            Science. I have been programming for 6 years now starting off with
+            HTML, CSS, and vanilla JS moving towards Python and Java throughout
+            college. Next step was to get a Full Stack Developer Certificate.
+            While getting my certificate I learned react.js, express.js,
+            node.js, mySQL, SQL, and more Web development resources.
+          </p>
+          <br />
+        </div>
+        <hr/>
+        <div class="projects-main">
+          <div class="project-1">
+            <h2>One Route</h2>
+            <p>
+              A 2D game made with unity<br />This game consist of bringing items
+              to certain parts of the area to unlock the main treasure piece to
+              escape the manison!
+            </p>
+            <video width="320" height="240" controls>
+              <source src="./assets/Main-One-Route-App.mov" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <br/>
+          <hr/>
+          <br/>
+          <div class="project-2">
+            <h2>Mrs. Weather</h2>
+            <p>
+              A react weather app that will give you the latest and greatest
+              weather reports in your area
+            </p>
+            <video width="320" height="240" controls>
+              <source src="./assets/Screen Recording 2022-03-23 at 12.38.34 PM.mov" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <br/>
+          <hr/>
+          <br/>
+          <div class="project-3">
+            <h2>Mrs. Weather</h2>
+            <p>
+              A react weather app that will give you the latest and greatest
+              weather reports in your area
+            </p>
+            <video width="320" height="240" controls>
+              <source src="./assets/Screen Recording 2022-03-23 at 12.38.34 PM.mov" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <br/>
+          <hr/>
+          <br/>
+          <div class="project-4">
+            <h2>Mrs. Weather</h2>
+            <p>
+              A react weather app that will give you the latest and greatest
+              weather reports in your area
+            </p>
+            <video width="320" height="240" controls>
+              <source src="./assets/Screen Recording 2022-03-23 at 12.38.34 PM.mov" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <div class="portfolio">
+          <a class="bottomSection" id="bottom">Bottom Section</a>
+          <div class="resume-image">
+            <img src="#" alt="resume-image" />
+          </div>
+          <div class="resume">
+            <a href="./assets/Main-Resume-2022.pdf" target="_blank"
+              ><button type="button">My Resume</button>
+            </a>
+          </div>
+
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
