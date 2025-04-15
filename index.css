@@ -210,21 +210,36 @@ body {
   margin-bottom: 20px;
 }
 
-.resume button {
+.resume-section {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.resume-button {
+  display: inline-block;
   padding: 15px 30px;
   font-size: 1.1rem;
   background-color: #2c3e50;
   color: #fff;
-  border: none;
+  text-decoration: none;
   border-radius: 5px;
-  cursor: pointer;
   transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
 }
 
-.resume button:hover {
+.resume-button i {
+  margin-right: 8px;
+}
+
+.resume-button:hover {
   background-color: #3498db;
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.resume-button:active {
+  transform: translateY(0);
 }
 
 hr {
