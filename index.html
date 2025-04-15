@@ -3,115 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hunter Monaghan - Portfolio</title>
+  <title>Hunter Monaghan - Project Index</title>
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-  <div class="wrapper">
-    <div class="sidebar">
-      <img src="./assets/portfolioPic.jpg" alt="Profile Picture" id="profilePic">
-      <h3>Hunter Monaghan</h3>
-      <p>Fullstack Software Engineer</p>
-      <ul>
-        <li><a href="#top"><i class="fas fa-home"></i> Home</a></li>
-        <li><a href="#middleSection"><i class="fas fa-address-card"></i> About</a></li>
-        <li><a href="#bottomSection"><i class="fas fa-project-diagram"></i> Portfolio</a></li>
-        <li><a href="#" onclick="window.open('https://www.google.com/maps?q=Charleston,South+Carolina'); return false;"><i class="fas fa-map-marker-alt"></i> Map</a></li>
-      </ul>
-      <div class="social_media">
-        <a href="https://www.facebook.com/hunter.monaghan" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.linkedin.com/in/hunter-monaghan-7b039a130/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://github.com/monaghanhc" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.instagram.com/hunter_monaghan/" target="_blank"><i class="fab fa-instagram"></i></a>
-      </div>
-    </div>
+  <div class="container">
+    <header>
+      <img src="./assets/portfolioPic.jpg" alt="Profile Picture" class="profile-pic">
+      <h1>[Hunter Monaghan's Project Index]</h1>
+      <p class="subtitle">Full-Stack Software Developer</p>
+      <p class="skills">React Native, React, Express, Node, JS, CSS, Java, Python</p>
+    </header>
 
-    <div class="main_content">
-      <div class="slideshow-container">
-        <!-- Your slideshow content here -->
-      </div>
+    <div class="separator">----------------------------------------</div>
 
-      <div class="info">
-        <a name="top" id="top"></a>
-        <h1>Full-Stack Software Developer</h1>
-        <p>React Native, React, Express, Node, JS, CSS, Java, Python</p>
-      </div>
-      <hr>
+    <section class="about">
+      <p>
+        My name is Hunter Monaghan, a passionate Fullstack Software Engineer with a creative flair. Graduated from JRS Coding School and soon to complete my Bachelor's in Computer Science at The College of Charleston. With 6 years of programming experience, I've mastered technologies like HTML, CSS, JavaScript, Python, Java, and more. Currently proficient in React, Express, and Node for full-stack development.
+      </p>
+    </section>
 
-      <div class="about">
-        <p>
-          My name is Hunter Monaghan, a passionate Fullstack Software Engineer with a creative flair. Graduated from JRS Coding School and soon to complete my Bachelor's in Computer Science at The College of Charleston. With 6 years of programming experience, I've mastered technologies like HTML, CSS, JavaScript, Python, Java, and more. Currently proficient in React, Express, and Node for full-stack development.
-        </p>
-      </div>
-      <hr>
+    <div class="separator">----------------------------------------</div>
 
-      <div class="projects-main">
-        <!-- Your projects content here -->
-      </div>
+    <main class="projects">
+      <h2 class="section-title">My Projects</h2>
+      <p class="section-subtitle">Mobile Applications Available on iOS and Android</p>
 
-      <div class="portfolio">
-        <a class="bottomSection" id="bottom"><h1>Contact Me</h1></a>
-        <div class="resume-section">
-          <div class="resume">
-            <a href="./assets/Hunter_Resume.pdf" target="_blank" class="resume-button">
-              <i class="fas fa-download"></i> Download My Resume
-            </a>
-          </div>
-          <div class="projects-container">
-            <h2 class="section-title">My Projects</h2>
-            <p class="section-subtitle">Mobile Applications Available on iOS and Android</p>
-            <div class="projects-grid">
-              <div class="project-card">
-                <div class="project-header">
-                  <h3>Storage Treasures</h3>
-                  <p class="project-description">Online auction platform for storage units</p>
-                </div>
-                <div class="store-buttons">
-                  <a href="https://apps.apple.com/us/app/storagetreasures-auction-app/id6448074082" target="_blank" class="app-store-button">
-                    <i class="fab fa-apple"></i> App Store
-                  </a>
-                  <a href="https://play.google.com/store/apps/details?id=com.opentech.storagetreasures&pcampaignid=web_share" target="_blank" class="android-store-button">
-                    <i class="fab fa-android"></i> Play Store
-                  </a>
-                </div>
-              </div>
-
-              <div class="project-card">
-                <div class="project-header">
-                  <h3>Storage Genie</h3>
-                  <p class="project-description">Storage unit management solution</p>
-                </div>
-                <div class="store-buttons">
-                  <a href="https://apps.apple.com/us/app/storage-genie/id1266354633" target="_blank" class="app-store-button">
-                    <i class="fab fa-apple"></i> App Store
-                  </a>
-                  <a href="https://play.google.com/store/apps/details?id=com.opentech.storagegenie&pcampaignid=web_share" target="_blank" class="android-store-button">
-                    <i class="fab fa-android"></i> Play Store
-                  </a>
-                </div>
-              </div>
-
-              <div class="project-card">
-                <div class="project-header">
-                  <h3>Manager Genie</h3>
-                  <p class="project-description">Property management made easy</p>
-                </div>
-                <div class="store-buttons">
-                  <a href="https://apps.apple.com/us/app/manager-genie/id6463749332" target="_blank" class="app-store-button">
-                    <i class="fab fa-apple"></i> App Store
-                  </a>
-                  <a href="https://play.google.com/store/apps/details?id=com.opentech.managergenie&pcampaignid=web_share" target="_blank" class="android-store-button">
-                    <i class="fab fa-android"></i> Play Store
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+      <section class="project">
+        <h3><a href="#">Storage Treasures</a></h3>
+        <p class="description">Online auction platform for storage units</p>
+        <div class="store-buttons">
+          <a href="https://apps.apple.com/us/app/storagetreasures-auction-app/id6448074082" target="_blank" class="store-button">
+            <i class="fab fa-apple"></i> App Store
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.opentech.storagetreasures&pcampaignid=web_share" target="_blank" class="store-button">
+            <i class="fab fa-android"></i> Play Store
+          </a>
         </div>
+      </section>
+
+      <section class="project">
+        <h3><a href="#">Storage Genie</a></h3>
+        <p class="description">Storage unit management solution</p>
+        <div class="store-buttons">
+          <a href="https://apps.apple.com/us/app/storage-genie/id1266354633" target="_blank" class="store-button">
+            <i class="fab fa-apple"></i> App Store
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.opentech.storagegenie&pcampaignid=web_share" target="_blank" class="store-button">
+            <i class="fab fa-android"></i> Play Store
+          </a>
+        </div>
+      </section>
+
+      <section class="project">
+        <h3><a href="#">Manager Genie</a></h3>
+        <p class="description">Property management made easy</p>
+        <div class="store-buttons">
+          <a href="https://apps.apple.com/us/app/manager-genie/id6463749332" target="_blank" class="store-button">
+            <i class="fab fa-apple"></i> App Store
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.opentech.managergenie&pcampaignid=web_share" target="_blank" class="store-button">
+            <i class="fab fa-android"></i> Play Store
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <div class="separator">----------------------------------------</div>
+
+    <footer>
+      <h2>Contact Me</h2>
+      <div class="resume">
+        <a href="./assets/Hunter_Resume.pdf" target="_blank" class="resume-button">
+          <i class="fas fa-download"></i> Download My Resume
+        </a>
       </div>
-    </div>
+      <div class="social-links">
+        <a href="https://github.com/monaghanhc" target="_blank"><i class="fab fa-github"></i> GitHub</a> |
+        <a href="https://www.linkedin.com/in/hunter-monaghan-7b039a130/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> |
+        <a href="mailto:hunter.monaghan@example.com"><i class="fas fa-envelope"></i> Email</a>
+      </div>
+    </footer>
   </div>
-  <script src="./upsell.js"></script>
 </body>
 </html>
