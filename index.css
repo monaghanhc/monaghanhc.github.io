@@ -65,6 +65,7 @@ h1 {
 .section-title {
   font-size: 1.3rem;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .section-subtitle {
