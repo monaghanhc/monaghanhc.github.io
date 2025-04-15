@@ -249,15 +249,46 @@ hr {
   margin: 40px 0;
 }
 
-.projects-section {
+.projects-container {
   text-align: center;
   margin: 30px 0;
 }
 
-.projects-section p {
+.projects-container p {
   font-size: 1.5rem;
   color: #2c3e50;
   margin-bottom: 20px;
+  padding-top: 200rem;
+}
+
+.store-links-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+.store-column {
+  flex: 1;
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.store-column h3 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .app-store-links {
@@ -265,25 +296,36 @@ hr {
   flex-direction: column;
   align-items: center;
   gap: 15px;
-  margin-top: 20px;
+  width: 100%;
 }
 
-.app-store-button {
+.app-store-button,
+.android-store-button {
   display: inline-block;
   padding: 12px 25px;
   font-size: 1rem;
-  background-color: #000;
-  color: #fff;
   text-decoration: none;
   border-radius: 5px;
   transition: all 0.3s ease;
   border: none;
   cursor: pointer;
-  width: 300px;
+  width: 100%;
+  max-width: 250px;
   text-align: center;
 }
 
-.app-store-button i {
+.app-store-button {
+  background-color: #000;
+  color: #fff;
+}
+
+.android-store-button {
+  background-color: #3DDC84;
+  color: #fff;
+}
+
+.app-store-button i,
+.android-store-button i {
   margin-right: 8px;
 }
 
@@ -293,7 +335,14 @@ hr {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.app-store-button:active {
+.android-store-button:hover {
+  background-color: #2BB673;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.app-store-button:active,
+.android-store-button:active {
   transform: translateY(0);
 }
 
@@ -321,7 +370,14 @@ hr {
     width: 100%;
   }
   
-  .app-store-button {
+  .store-links-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 10px;
+  }
+  
+  .store-column {
     width: 100%;
     max-width: 300px;
   }
