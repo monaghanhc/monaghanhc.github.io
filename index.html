@@ -17,7 +17,7 @@
     </header>
 
     <div class="separator">
-      <span>----------------------------------------</span>
+      <span>--</span>
     </div>
     <section class="about">
       <p>
@@ -26,7 +26,7 @@
     </section>
 
     <div class="separator">
-      <span>----------------------------------------</span>
+      <span>-</span>
     </div>
 
     <main class="projects">
@@ -98,7 +98,7 @@
     </main>
 
     <div class="separator">
-      <span>------------------------------------------------------------------------</span>
+      <span>-</span>
     </div>
 
     <section class="web-projects">
@@ -119,8 +119,6 @@
       </section>
     </section>
 
-    <div class="separator"></div>
-
     <footer>
       <h2>Contact Me</h2>
       <div class="resume">
@@ -136,4 +134,20 @@
     </footer>
   </div>
 </body>
+<script>
+  function updateSeparators() {
+    const separators = document.querySelectorAll('.separator span');
+    const dashWidth = 8; // Approx width per dash (in px)
+
+    separators.forEach(span => {
+      const width = span.parentElement.offsetWidth;
+      const numDashes = Math.floor(width / dashWidth);
+      span.textContent = '-'.repeat(numDashes);
+    });
+  }
+
+  window.addEventListener('load', updateSeparators);
+  window.addEventListener('resize', updateSeparators);
+</script>
+
 </html>
