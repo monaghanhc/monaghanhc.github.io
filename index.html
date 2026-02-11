@@ -1,181 +1,276 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hunter Monaghan - Project Index</title>
+  <title>Hunter Monaghan | Full-Stack Developer</title>
+  <meta name="description" content="Hunter Monaghan portfolio featuring production mobile apps, web projects, and all public GitHub repositories.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <img src="./assets/portfolioPic.jpg" alt="Profile Picture" class="profile-pic">
-      <h1>[Hunter Monaghan's Project Index]</h1>
-      <p class="subtitle">Full-Stack Software Developer</p>
-      <p class="skills">React Native, React, Express, Node, JS, CSS, Java, Python, C#</p>
+  <div class="site-shell">
+    <header class="hero">
+      <p class="hero-badge">Open to software engineering roles</p>
+      <div class="hero-main">
+        <img src="./assets/portfolioPic.jpg" alt="Hunter Monaghan profile photo" class="profile-pic">
+        <div class="hero-copy">
+          <p class="eyebrow">Hunter Monaghan</p>
+          <h1>Full-Stack Developer building reliable apps for web and mobile.</h1>
+          <p class="hero-lede">
+            I am a software engineer with a Computer Science degree from The College of Charleston and six-plus years of hands-on coding experience.
+            I build scalable products using React, React Native (Expo), Node.js, SQL, Express, and modern JavaScript tooling.
+          </p>
+          <ul class="skill-pills" aria-label="Primary skills">
+            <li>React Native</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C#</li>
+          </ul>
+          <div class="hero-actions">
+            <a href="#github-repositories" class="button button-primary">
+              <i class="fab fa-github"></i>
+              Browse GitHub Repos
+            </a>
+            <a href="./assets/Hunter_Monaghan_Resume_Latest.pdf" target="_blank" rel="noopener noreferrer" class="button button-secondary">
+              <i class="fas fa-download"></i>
+              Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <div class="separator">
-      <span>--</span>
-    </div>
-    <section class="about">
-      <p>
-        My name is Hunter Monaghan, and I am a dedicated Full-Stack Software Engineer with a strong foundation in both front-end and back-end development. I hold a Bachelor’s degree in Computer Science from The College of Charleston and am a graduate of JRS Coding School. With over six years of hands-on programming experience, I have developed proficiency in languages such as JavaScript, Python, Java, HTML, and CSS. My current focus is on building robust, scalable web and mobile applications using the React, React Native(Expo), Node.js, SQL, and Express. 
-      </p>
-    </section>
+    <main>
+      <section class="panel">
+        <div class="section-head">
+          <div>
+            <h2>Mobile Apps in Production</h2>
+            <p class="section-subtitle">Applications available on iOS and Android.</p>
+          </div>
+        </div>
+        <div class="cards">
+          <article class="project-card">
+            <div class="project-header">
+              <h3>Storage Treasures</h3>
+              <span class="project-type">Mobile App</span>
+            </div>
+            <p class="project-description">Online auction platform for storage units.</p>
+            <div class="link-row">
+              <a href="https://apps.apple.com/us/app/storagetreasures-auction-app/id6448074082" target="_blank" rel="noopener noreferrer" class="button-link">
+                <i class="fab fa-apple"></i>
+                App Store
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.opentech.storagetreasures&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="button-link">
+                <i class="fab fa-android"></i>
+                Play Store
+              </a>
+            </div>
+          </article>
 
-    <div class="separator">
-      <span>-</span>
-    </div>
+          <article class="project-card">
+            <div class="project-header">
+              <h3>Storage Genie</h3>
+              <span class="project-type">Mobile App</span>
+            </div>
+            <p class="project-description">Storage unit management solution for operators and customers.</p>
+            <div class="link-row">
+              <a href="https://apps.apple.com/us/app/storage-genie/id1266354633" target="_blank" rel="noopener noreferrer" class="button-link">
+                <i class="fab fa-apple"></i>
+                App Store
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.opentech.storagegenie&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="button-link">
+                <i class="fab fa-android"></i>
+                Play Store
+              </a>
+            </div>
+          </article>
 
-    <main class="projects">
-      <h2 class="section-title">My Projects</h2>
-      <p class="section-subtitle">Mobile Applications Available on iOS and Android. Developed in collaboration with a great team</p>
+          <article class="project-card">
+            <div class="project-header">
+              <h3>Manager Genie</h3>
+              <span class="project-type">Mobile App</span>
+            </div>
+            <p class="project-description">Property management tools built for efficiency and real-time workflows.</p>
+            <div class="link-row">
+              <a href="https://apps.apple.com/us/app/manager-genie/id6463749332" target="_blank" rel="noopener noreferrer" class="button-link">
+                <i class="fab fa-apple"></i>
+                App Store
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.opentech.managergenie&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="button-link">
+                <i class="fab fa-android"></i>
+                Play Store
+              </a>
+            </div>
+          </article>
 
-      <section class="project">
-        <h3><a href="#">Storage Treasures</a></h3>
-        <p class="description">Online auction platform for storage units</p>
-        <div class="store-buttons">
-          <a href="https://apps.apple.com/us/app/storagetreasures-auction-app/id6448074082" target="_blank" class="store-button">
-            <i class="fab fa-apple"></i> App Store
-          </a>
-          <a href="https://play.google.com/store/apps/details?id=com.opentech.storagetreasures&pcampaignid=web_share" target="_blank" class="store-button">
-            <i class="fab fa-android"></i> Play Store
-          </a>
+          <article class="project-card">
+            <div class="project-header">
+              <h3>Safeguard Access Plus</h3>
+              <span class="project-type">Mobile App</span>
+            </div>
+            <p class="project-description">Hands-free facility access experience built to streamline self-storage entry.</p>
+            <div class="link-row">
+              <a href="https://apps.apple.com/us/app/safeguard-access-plus/id6572315194" target="_blank" rel="noopener noreferrer" class="button-link">
+                <i class="fab fa-apple"></i>
+                App Store
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.safeguard.accessplus&hl=en_US" target="_blank" rel="noopener noreferrer" class="button-link">
+                <i class="fab fa-android"></i>
+                Play Store
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <h3>StorageUnlocked</h3>
+              <span class="project-type">Mobile App</span>
+            </div>
+            <p class="project-description">Touch-free access companion app for StorageMart facilities.</p>
+            <div class="link-row">
+              <a href="https://apps.apple.com/us/app/storageunlocked/id1525635336" target="_blank" rel="noopener noreferrer" class="button-link">
+                <i class="fab fa-apple"></i>
+                App Store
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.storagemart.genie&hl=en_US" target="_blank" rel="noopener noreferrer" class="button-link">
+                <i class="fab fa-android"></i>
+                Play Store
+              </a>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section class="project">
-        <h3><a href="#">Storage Genie</a></h3>
-        <p class="description">Storage unit management solution</p>
-        <div class="store-buttons">
-          <a href="https://apps.apple.com/us/app/storage-genie/id1266354633" target="_blank" class="store-button">
-            <i class="fab fa-apple"></i> App Store
-          </a>
-          <a href="https://play.google.com/store/apps/details?id=com.opentech.storagegenie&pcampaignid=web_share" target="_blank" class="store-button">
-            <i class="fab fa-android"></i> Play Store
-          </a>
+      <section class="panel">
+        <div class="section-head">
+          <div>
+            <h2>Featured Web Projects</h2>
+            <p class="section-subtitle">Selected builds with deployment and source links.</p>
+          </div>
+        </div>
+        <div class="cards">
+          <article class="project-card">
+            <div class="project-header">
+              <h3>DockSplit</h3>
+              <span class="project-type">Web App</span>
+            </div>
+            <p class="project-description">Full-stack web application built with React and Node.js.</p>
+            <div class="link-row">
+              <a href="https://jrs-individual-project.vercel.app" target="_blank" rel="noopener noreferrer" class="button-link">
+                <i class="fas fa-external-link-alt"></i>
+                Visit Website
+              </a>
+              <a href="https://github.com/monaghanhc/jrs-individual-project" target="_blank" rel="noopener noreferrer" class="button-link">
+                <i class="fab fa-github"></i>
+                View Code
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <h3>Mr.Weather</h3>
+              <span class="project-type">Web App</span>
+            </div>
+            <p class="project-description">Weather-focused full-stack app built with React, Express.js, and Node.js.</p>
+            <div class="link-row">
+              <a href="https://github.com/monaghanhc/react.js/tree/master/Final-Weather-App_Hunter-Monaghan/Mr.Weather" target="_blank" rel="noopener noreferrer" class="button-link">
+                <i class="fab fa-github"></i>
+                View Code
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <h3>Make It Compliant</h3>
+              <span class="project-type">ML + Web</span>
+            </div>
+            <p class="project-description">Software license comparison tool using ML/NLP with Flask and SWI-Prolog components.</p>
+            <div class="link-row">
+              <a href="https://github.com/christhepoole/makeitcompliantpython" target="_blank" rel="noopener noreferrer" class="button-link">
+                <i class="fab fa-github"></i>
+                View Code
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <h3>Space Ship Game</h3>
+              <span class="project-type">Game</span>
+            </div>
+            <p class="project-description">Arcade-style game prototype built with Processing.js.</p>
+            <div class="link-row">
+              <a href="https://github.com/monaghanhc/spaceshipGame" target="_blank" rel="noopener noreferrer" class="button-link">
+                <i class="fab fa-github"></i>
+                View Code
+              </a>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section class="project">
-        <h3><a href="#">Manager Genie</a></h3>
-        <p class="description">Property management made easy</p>
-        <div class="store-buttons">
-          <a href="https://apps.apple.com/us/app/manager-genie/id6463749332" target="_blank" class="store-button">
-            <i class="fab fa-apple"></i> App Store
-          </a>
-          <a href="https://play.google.com/store/apps/details?id=com.opentech.managergenie&pcampaignid=web_share" target="_blank" class="store-button">
-            <i class="fab fa-android"></i> Play Store
-          </a>
+      <section class="panel" id="github-repositories">
+        <div class="section-head">
+          <div>
+            <h2>All GitHub Repositories</h2>
+            <p class="section-subtitle">
+              This list is loaded live from <a href="https://github.com/monaghanhc" target="_blank" rel="noopener noreferrer">@monaghanhc</a> and includes every public repository.
+            </p>
+          </div>
+          <div class="repo-controls">
+            <label class="control">
+              <span>Search</span>
+              <input id="repo-search" type="search" placeholder="Find a repository">
+            </label>
+            <label class="control">
+              <span>Language</span>
+              <select id="repo-language">
+                <option value="all">All languages</option>
+              </select>
+            </label>
+            <label class="control">
+              <span>Sort</span>
+              <select id="repo-sort">
+                <option value="updated">Recently updated</option>
+                <option value="stars">Most stars</option>
+                <option value="name">Name (A-Z)</option>
+              </select>
+            </label>
+          </div>
         </div>
-      </section>
-      <section class="project">
-        <h3><a href="#">Safeguard Access Plus</a></h3>
-        <p class="description">Safeguard Access Plus brings a new level of convenience to your storage experience by granting you seamless, hands-free access to your facility</p>
-        <div class="store-buttons">
-          <a href="https://apps.apple.com/us/app/safeguard-access-plus/id6572315194" target="_blank" class="store-button">
-            <i class="fab fa-apple"></i> App Store
-          </a>
-          <a href="https://play.google.com/store/apps/details?id=com.safeguard.accessplus&hl=en_US" target="_blank" class="store-button">
-            <i class="fab fa-android"></i> Play Store
-          </a>
-        </div>
-      </section>
-      <section class="project">
-        <h3><a href="#">StorageUnlocked</a></h3>
-        <p class="description">StorageMart Unlocked is magic, it can grant you access to your StorageMart facility without having to touch your phone.</p>
-        <div class="store-buttons">
-          <a href="https://apps.apple.com/us/app/storageunlocked/id1525635336" target="_blank" class="store-button">
-            <i class="fab fa-apple"></i> App Store
-          </a>
-          <a href="https://play.google.com/store/apps/details?id=com.storagemart.genie&hl=en_US" target="_blank" class="store-button">
-            <i class="fab fa-android"></i> Play Store
-          </a>
-        </div>
+        <p id="repo-status" class="repo-status" role="status" aria-live="polite">Loading repositories...</p>
+        <div id="repo-grid" class="repo-grid" hidden></div>
       </section>
     </main>
 
-    <div class="separator">
-      <span>-</span>
-    </div>
-
-    <section class="web-projects">
-      <h2 class="section-title">Web Projects</h2>
-      <p class="section-subtitle">Interactive Web Applications</p>
-
-      <section class="project">
-        <h3><a href="https://jrs-individual-project.vercel.app" target="_blank">DockSplit</a></h3>
-        <p class="description">A full-stack web application built with React and Node.js</p>
-        <div class="project-links">
-          <a href="https://jrs-individual-project.vercel.app" target="_blank" class="project-button">
-            <i class="fas fa-external-link-alt"></i> Visit Website
-          </a>
-          <a href="https://github.com/monaghanhc/jrs-individual-project" target="_blank" class="project-button">
-            <i class="fab fa-github"></i> View Code
-          </a>
-        </div>
-      </section>
-
-      <section class="project">
-        <h3>Mr.Weather</h3>
-        <p class="description">A full-stack web application built with React, Express.js and Node.js</p>
-        <div class="project-links">
-          <a href="https://github.com/monaghanhc/react.js/tree/master/Final-Weather-App_Hunter-Monaghan/Mr.Weather" target="_blank" class="project-button">
-            <i class="fab fa-github"></i> View Code
-          </a>
-        </div>
-      </section>
-      <section class="project">
-        <h3>Make it Complaint</h3>
-        <p class="description">This app will allow users to upload two software licensee files and compare them based on their contents using ML/NLP. Mainly SWI-prolog and flask were used in the making of this software. We have a webapp and also a GUI standalone program than can be download via .exe</p>
-        <div class="project-links">
-          <a href="https://github.com/christhepoole/makeitcompliantpython" target="_blank" class="project-button">
-            <i class="fab fa-github"></i> View Code
-          </a>
-        </div>
-      </section>
-      <section class="project">
-        <h3>Space Ship Game</h3>
-        <p class="description">Simple game made using process.js</p>
-        <div class="project-links">
-          <a href="https://github.com/monaghanhc/spaceshipGame" target="_blank" class="project-button">
-            <i class="fab fa-github"></i> View Code
-          </a>
-        </div>
-      </section>
-    </section>
-
-    <footer>
-      <h2>Contact Me</h2>
-      <div class="resume">
-        <a href="./assets/Hunter_Monaghan_Resume_Latest.pdf" target="_blank" class="resume-button">
-          <i class="fas fa-download"></i> Download My Resume
-        </a>
-      </div>
+    <footer class="footer">
+      <h2>Contact</h2>
       <div class="social-links">
-        <a href="https://github.com/monaghanhc" target="_blank"><i class="fab fa-github"></i> GitHub</a> |
-        <a href="https://www.linkedin.com/in/hunter-monaghan-7b039a130/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> |
-        <a href="mailto:hunter.monaghan5@gmail.com" target="_blank"><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://github.com/monaghanhc" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/hunter-monaghan-7b039a130/" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin"></i>
+          LinkedIn
+        </a>
+        <a href="mailto:hunter.monaghan5@gmail.com" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-envelope"></i>
+          Email
+        </a>
       </div>
     </footer>
   </div>
+  <script src="script.js"></script>
 </body>
-<script>
-  function updateSeparators() {
-    const separators = document.querySelectorAll('.separator span');
-    const dashWidth = 12; // Approx width per dash (in px)
-
-    separators.forEach(span => {
-      const width = span.parentElement.offsetWidth;
-      const numDashes = Math.floor(width / dashWidth);
-      span.textContent = '-'.repeat(numDashes);
-    });
-  }
-
-  window.addEventListener('load', updateSeparators);
-  window.addEventListener('resize', updateSeparators);
-</script>
-
 </html>
