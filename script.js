@@ -6,6 +6,9 @@ const repoStatus = document.getElementById("repo-status");
 const repoSearch = document.getElementById("repo-search");
 const repoLanguage = document.getElementById("repo-language");
 const repoSort = document.getElementById("repo-sort");
+const repoCountStat = document.getElementById("repo-count-stat");
+const starCountStat = document.getElementById("star-count-stat");
+const latestUpdateStat = document.getElementById("latest-update-stat");
 
 const state = {
   repos: []
@@ -52,33 +55,19 @@ function setStatus(message, isError = false) {
   repoStatus.classList.toggle("error", isError);
 }
 
-function normalizeExternalUrl(urlValue) {
-  if (!urlValue) {
-    return null;
+function updateSnapshotStats(repos) {
+  if (repoCountStat) {
+    repoCountStat.textContent = `${repos.length}`;
   }
 
-  const trimmed = urlValue.trim();
-  if (!trimmed) {
-    return null;
+  if (starCountStat) {
+    const totalStars = repos.reduce((total, repo) => total + (repo.stargazers_count || 0), 0);
+    starCountStat.textContent = `${totalStars}`;
   }
 
-  const sanitize = (candidate) => {
-    const parsed = new URL(candidate);
-    if (parsed.protocol === "http:" || parsed.protocol === "https:") {
-      return parsed.toString();
-    }
-
-    return null;
-  };
-
-  try {
-    return sanitize(trimmed);
-  } catch (_error) {
-    try {
-      return sanitize(`https://${trimmed}`);
-    } catch (_nestedError) {
-      return null;
-    }
+  if (latestUpdateStat) {
+    const newestRepo = [...repos].sort((a, b) => b.updated_at.localeCompare(a.updated_at))[0];
+    latestUpdateStat.textContent = newestRepo ? formatDate(newestRepo.updated_at) : "--";
   }
 }
 
@@ -215,19 +204,6 @@ function renderRepos() {
     codeLink.append(codeIcon, " Code");
     links.append(codeLink);
 
-    const homepageUrl = normalizeExternalUrl(repo.homepage);
-    if (homepageUrl) {
-      const liveLink = document.createElement("a");
-      liveLink.href = homepageUrl;
-      liveLink.target = "_blank";
-      liveLink.rel = "noopener noreferrer";
-      const liveIcon = document.createElement("i");
-      liveIcon.className = "fas fa-up-right-from-square";
-      liveIcon.setAttribute("aria-hidden", "true");
-      liveLink.append(liveIcon, " Live");
-      links.append(liveLink);
-    }
-
     card.append(header, description, meta, links);
     repoGrid.append(card);
   });
@@ -276,6 +252,7 @@ async function initializeRepositorySection() {
   try {
     const repos = await fetchAllRepos(GITHUB_USERNAME);
     state.repos = repos;
+    updateSnapshotStats(repos);
 
     if (repos.length === 0) {
       repoGrid.hidden = true;

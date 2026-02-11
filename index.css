@@ -36,11 +36,56 @@ a {
   color: inherit;
 }
 
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -50px;
+  z-index: 1000;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: #0b4f77;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 14px;
+}
+
 .site-shell {
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
   gap: 24px;
+}
+
+.top-nav {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: rgba(251, 253, 255, 0.9);
+  border: 1px solid #c5d7e2;
+  border-radius: 14px;
+  padding: 10px;
+  backdrop-filter: blur(8px);
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: #164e73;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: 1px solid #b9cedd;
+  border-radius: 999px;
+  padding: 6px 11px;
+}
+
+.top-nav a:hover {
+  background: #e8f2f8;
 }
 
 .hero,
@@ -127,6 +172,19 @@ h1 {
   max-width: 72ch;
 }
 
+.hero-proof {
+  margin: 12px 0 0;
+  color: #154f73;
+  font-size: 0.92rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid #b8d0df;
+  background: #edf6fb;
+  border-radius: 999px;
+  padding: 7px 12px;
+}
+
 .skill-pills {
   list-style: none;
   margin: 18px 0 0;
@@ -174,7 +232,8 @@ h1 {
 .control select:focus-visible,
 .repo-title a:focus-visible,
 .section-subtitle a:focus-visible,
-.social-links a:focus-visible {
+.social-links a:focus-visible,
+.top-nav a:focus-visible {
   outline: 2px solid #2f6f95;
   outline-offset: 2px;
 }
@@ -212,6 +271,71 @@ main {
 
 .panel {
   padding: 26px;
+}
+
+.recruiter-panel {
+  background:
+    linear-gradient(165deg, rgba(13, 93, 140, 0.08), rgba(180, 92, 40, 0.08)),
+    var(--panel);
+}
+
+.snapshot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 12px;
+}
+
+.snapshot-card {
+  margin: 0;
+  background: #ffffff;
+  border: 1px solid #bdd1de;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.snapshot-label {
+  margin: 0;
+  font-size: 0.76rem;
+  color: #4a6172;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.snapshot-value {
+  margin: 8px 0 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #0f3a57;
+}
+
+.snapshot-date {
+  font-size: 1.12rem;
+}
+
+.highlights-grid {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.highlights-grid p {
+  margin: 0;
+  border: 1px solid #bfd2de;
+  border-radius: 12px;
+  background: #f4f9fc;
+  padding: 10px 11px;
+  color: #2f4e63;
+  font-size: 0.92rem;
+  display: flex;
+  gap: 8px;
+}
+
+.highlights-grid i {
+  color: #0f638f;
+  margin-top: 2px;
 }
 
 .section-head {
@@ -281,6 +405,13 @@ h2 {
   margin: 0;
   color: var(--text-muted);
   font-size: 0.95rem;
+}
+
+.project-note {
+  margin: 0;
+  color: #576f80;
+  font-size: 0.82rem;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 .link-row {
@@ -458,6 +589,12 @@ h2 {
   margin: 0 0 14px;
 }
 
+.footer-note {
+  margin: 0 0 14px;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
 .social-links {
   display: flex;
   justify-content: center;
@@ -492,6 +629,11 @@ h2 {
     flex-direction: column;
   }
 
+  .hero-proof {
+    border-radius: 12px;
+    display: flex;
+  }
+
   .repo-controls {
     width: 100%;
     justify-content: flex-start;
@@ -515,6 +657,15 @@ h2 {
     padding: 18px;
   }
 
+  .top-nav {
+    justify-content: flex-start;
+  }
+
+  .top-nav a {
+    width: 100%;
+    text-align: center;
+  }
+
   .control {
     min-width: 100%;
   }
@@ -533,5 +684,9 @@ h2 {
   .social-links {
     flex-direction: column;
     gap: 12px;
+  }
+
+  .snapshot-value {
+    font-size: 1.35rem;
   }
 }

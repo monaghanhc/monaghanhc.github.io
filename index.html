@@ -12,9 +12,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <div class="site-shell">
+    <nav class="top-nav" aria-label="Primary">
+      <a href="#featured-work">Featured Work</a>
+      <a href="#github-repositories">GitHub Repositories</a>
+      <a href="#contact">Contact</a>
+    </nav>
     <header class="hero">
-      <p class="hero-badge">Open to software engineering roles</p>
+      <p class="hero-badge">Actively interviewing for full-stack roles</p>
       <div class="hero-main">
         <img src="./assets/portfolioPic.jpg" alt="Hunter Monaghan profile photo" class="profile-pic">
         <div class="hero-copy">
@@ -23,6 +29,10 @@
           <p class="hero-lede">
             I am a software engineer with a Computer Science degree from The College of Charleston and six-plus years of hands-on coding experience.
             I build scalable products using React, React Native (Expo), Node.js, SQL, Express, and modern JavaScript tooling.
+          </p>
+          <p class="hero-proof">
+            <i class="fas fa-circle-check" aria-hidden="true"></i>
+            5 production mobile apps, 6+ years of coding experience, and all public GitHub work linked below.
           </p>
           <ul class="skill-pills" aria-label="Primary skills">
             <li>React Native</li>
@@ -48,7 +58,39 @@
       </div>
     </header>
 
-    <main>
+    <main id="main-content">
+      <section class="panel recruiter-panel" id="featured-work">
+        <div class="section-head">
+          <div>
+            <h2>Recruiter Snapshot</h2>
+            <p class="section-subtitle">Quick proof points and role fit at a glance.</p>
+          </div>
+        </div>
+        <div class="snapshot-grid">
+          <article class="snapshot-card">
+            <p class="snapshot-label">Production Mobile Apps</p>
+            <p class="snapshot-value">5</p>
+          </article>
+          <article class="snapshot-card">
+            <p class="snapshot-label">Public GitHub Repositories</p>
+            <p class="snapshot-value" id="repo-count-stat">--</p>
+          </article>
+          <article class="snapshot-card">
+            <p class="snapshot-label">Total GitHub Stars</p>
+            <p class="snapshot-value" id="star-count-stat">--</p>
+          </article>
+          <article class="snapshot-card">
+            <p class="snapshot-label">Most Recent Repo Activity</p>
+            <p class="snapshot-value snapshot-date" id="latest-update-stat">--</p>
+          </article>
+        </div>
+        <div class="highlights-grid">
+          <p><i class="fas fa-check" aria-hidden="true"></i> Strong mobile delivery track record with iOS and Android releases.</p>
+          <p><i class="fas fa-check" aria-hidden="true"></i> Full-stack ownership from UI implementation to backend APIs.</p>
+          <p><i class="fas fa-check" aria-hidden="true"></i> Consistent public GitHub activity across React, Python, Java, and C# projects.</p>
+        </div>
+      </section>
+
       <section class="panel">
         <div class="section-head">
           <div>
@@ -163,14 +205,15 @@
               <span class="project-type">Web App</span>
             </div>
             <p class="project-description">Full-stack web application built with React and Node.js.</p>
+            <p class="project-note">Private source repository. Public GitHub profile is linked below.</p>
             <div class="link-row">
               <a href="https://jrs-individual-project.vercel.app" target="_blank" rel="noopener noreferrer" class="button-link">
                 <i class="fas fa-external-link-alt"></i>
                 Visit Website
               </a>
-              <a href="https://github.com/monaghanhc/jrs-individual-project" target="_blank" rel="noopener noreferrer" class="button-link">
+              <a href="https://github.com/monaghanhc" target="_blank" rel="noopener noreferrer" class="button-link">
                 <i class="fab fa-github"></i>
-                View Code
+                GitHub Profile
               </a>
             </div>
           </article>
@@ -253,8 +296,9 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <h2>Contact</h2>
+      <p class="footer-note">For recruiting conversations, email is the fastest way to reach me.</p>
       <div class="social-links">
         <a href="https://github.com/monaghanhc" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-github"></i>
