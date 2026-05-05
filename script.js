@@ -1,5 +1,8 @@
 ﻿const GITHUB_USERNAME = "monaghanhc";
 const REPO_PAGE_SIZE = 100;
+const REPO_SITE_OVERRIDES = {
+  FixLocal_Website: "https://monaghanhc.github.io/FixLocal_Website/"
+};
 
 const repoGrid = document.getElementById("repo-grid");
 const repoStatus = document.getElementById("repo-status");
@@ -44,6 +47,10 @@ function createMetaItem(iconClass, labelText) {
 
   item.append(icon, label);
   return item;
+}
+
+function getRepoWebsiteUrl(repo) {
+  return REPO_SITE_OVERRIDES[repo.name] || repo.homepage || "";
 }
 
 function setStatus(message, isError = false) {
@@ -203,6 +210,19 @@ function renderRepos() {
     codeIcon.setAttribute("aria-hidden", "true");
     codeLink.append(codeIcon, " Code");
     links.append(codeLink);
+
+    const websiteUrl = getRepoWebsiteUrl(repo);
+    if (websiteUrl) {
+      const websiteLink = document.createElement("a");
+      websiteLink.href = websiteUrl;
+      websiteLink.target = "_blank";
+      websiteLink.rel = "noopener noreferrer";
+      const websiteIcon = document.createElement("i");
+      websiteIcon.className = "fas fa-arrow-up-right-from-square";
+      websiteIcon.setAttribute("aria-hidden", "true");
+      websiteLink.append(websiteIcon, " Website");
+      links.append(websiteLink);
+    }
 
     card.append(header, description, meta, links);
     repoGrid.append(card);

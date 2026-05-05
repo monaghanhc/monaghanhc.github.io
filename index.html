@@ -7,7 +7,7 @@
   <meta name="description" content="Hunter Monaghan portfolio featuring production mobile apps, web projects, and all public GitHub repositories.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -15,291 +15,428 @@
   <a class="skip-link" href="#main-content">Skip to main content</a>
   <div class="site-shell">
     <nav class="top-nav" aria-label="Primary">
-      <a href="#featured-work">Featured Work</a>
-      <a href="#github-repositories">GitHub Repositories</a>
-      <a href="#contact">Contact</a>
+      <div class="nav-inner">
+        <a class="nav-brand" href="#main-content" aria-label="Hunter Monaghan home">
+          <span class="brand-mark">HM</span>
+          <span>Hunter Monaghan</span>
+        </a>
+        <div class="nav-links">
+          <a href="#snapshot">Snapshot</a>
+          <a href="#experience">Experience</a>
+          <a href="#featured-work">Work</a>
+          <a href="#github-repositories">Repos</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
     </nav>
+
     <header class="hero">
-      <p class="hero-badge">Actively interviewing for full-stack roles</p>
-      <div class="hero-main">
-        <img src="./assets/portfolioPic.jpg" alt="Hunter Monaghan profile photo" class="profile-pic">
+      <div class="hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow">Hunter Monaghan</p>
-          <h1>Full-Stack Developer building reliable apps for web and mobile.</h1>
+          <p class="hero-badge">Open to full-stack software roles</p>
+          <p class="eyebrow">Computer Science Graduate | Web and Mobile Developer</p>
+          <h1>Hunter Monaghan</h1>
           <p class="hero-lede">
-            I am a software engineer with a Computer Science degree from The College of Charleston and six-plus years of hands-on coding experience.
-            I build scalable products using React, React Native (Expo), Node.js, SQL, Express, and modern JavaScript tooling.
+            Full-stack developer building production mobile apps, polished web experiences, and backend services with React, React Native, Node.js, SQL, and modern JavaScript.
           </p>
-          <p class="hero-proof">
-            <i class="fas fa-circle-check" aria-hidden="true"></i>
-            5 production mobile apps, 6+ years of coding experience, and all public GitHub work linked below.
-          </p>
-          <ul class="skill-pills" aria-label="Primary skills">
-            <li>React Native</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Java</li>
-            <li>C#</li>
-          </ul>
           <div class="hero-actions">
-            <a href="#github-repositories" class="button button-primary">
-              <i class="fab fa-github"></i>
-              Browse GitHub Repos
+            <a href="mailto:hunter.monaghan5@gmail.com" class="button button-primary">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              Email Me
             </a>
-            <a href="./assets/My_Resume.pdf" target="_blank" rel="noopener noreferrer" class="button button-secondary">
-              <i class="fas fa-download"></i>
-              Download Resume
+            <a href="./assets/Hunter_Monaghan_Resume_Latest.pdf" target="_blank" rel="noopener noreferrer" class="button button-secondary">
+              <i class="fas fa-file-arrow-down" aria-hidden="true"></i>
+              View Resume
+            </a>
+            <a href="#github-repositories" class="button button-quiet">
+              <i class="fab fa-github" aria-hidden="true"></i>
+              Browse Repos
             </a>
           </div>
+          <div class="hero-points" aria-label="Portfolio highlights">
+            <span><i class="fas fa-circle-check" aria-hidden="true"></i> 5 production mobile apps</span>
+            <span><i class="fas fa-circle-check" aria-hidden="true"></i> 6+ years coding experience</span>
+            <span><i class="fas fa-circle-check" aria-hidden="true"></i> Public GitHub work loaded live</span>
+          </div>
+        </div>
+        <div class="hero-summary" aria-label="Primary technical focus">
+          <p class="summary-kicker">Primary Focus</p>
+          <p class="summary-title">Frontend polish, mobile delivery, and full-stack ownership.</p>
+          <ul>
+            <li>React and React Native interfaces built for real users.</li>
+            <li>Node.js, Express, and SQL foundations for application backends.</li>
+            <li>GitHub Pages and public repositories available for review.</li>
+          </ul>
         </div>
       </div>
     </header>
 
     <main id="main-content">
-      <section class="panel recruiter-panel" id="featured-work">
-        <div class="section-head">
-          <div>
-            <h2>Recruiter Snapshot</h2>
-            <p class="section-subtitle">Quick proof points and role fit at a glance.</p>
+      <section class="section-band" id="snapshot">
+        <div class="section-inner">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">Recruiter Snapshot</p>
+              <h2>Proof points at a glance</h2>
+              <p class="section-subtitle">A quick read on delivery experience, public work, and current technical focus.</p>
+            </div>
           </div>
-        </div>
-        <div class="snapshot-grid">
-          <article class="snapshot-card">
-            <p class="snapshot-label">Production Mobile Apps</p>
-            <p class="snapshot-value">5</p>
-          </article>
-          <article class="snapshot-card">
-            <p class="snapshot-label">Public GitHub Repositories</p>
-            <p class="snapshot-value" id="repo-count-stat">--</p>
-          </article>
-          <article class="snapshot-card">
-            <p class="snapshot-label">Total GitHub Stars</p>
-            <p class="snapshot-value" id="star-count-stat">--</p>
-          </article>
-          <article class="snapshot-card">
-            <p class="snapshot-label">Most Recent Repo Activity</p>
-            <p class="snapshot-value snapshot-date" id="latest-update-stat">--</p>
-          </article>
-        </div>
-        <div class="highlights-grid">
-          <p><i class="fas fa-check" aria-hidden="true"></i> Strong mobile delivery track record with iOS and Android releases.</p>
-          <p><i class="fas fa-check" aria-hidden="true"></i> Full-stack ownership from UI implementation to backend APIs.</p>
-          <p><i class="fas fa-check" aria-hidden="true"></i> Consistent public GitHub activity across React, Python, Java, and C# projects.</p>
+          <div class="snapshot-grid">
+            <article class="snapshot-card">
+              <p class="snapshot-label">Production Mobile Apps</p>
+              <p class="snapshot-value">5</p>
+            </article>
+            <article class="snapshot-card">
+              <p class="snapshot-label">Public GitHub Repositories</p>
+              <p class="snapshot-value" id="repo-count-stat">--</p>
+            </article>
+            <article class="snapshot-card">
+              <p class="snapshot-label">Total GitHub Stars</p>
+              <p class="snapshot-value" id="star-count-stat">--</p>
+            </article>
+            <article class="snapshot-card">
+              <p class="snapshot-label">Most Recent Repo Activity</p>
+              <p class="snapshot-value snapshot-date" id="latest-update-stat">--</p>
+            </article>
+          </div>
+          <div class="impact-grid">
+            <article class="impact-card">
+              <i class="fas fa-mobile-screen-button" aria-hidden="true"></i>
+              <div>
+                <h3>Mobile product experience</h3>
+                <p>Hands-on work across customer-facing iOS and Android apps available through the App Store and Google Play.</p>
+              </div>
+            </article>
+            <article class="impact-card">
+              <i class="fas fa-layer-group" aria-hidden="true"></i>
+              <div>
+                <h3>Full-stack range</h3>
+                <p>Comfortable moving from interface implementation to APIs, data modeling, debugging, and deployment workflows.</p>
+              </div>
+            </article>
+            <article class="impact-card">
+              <i class="fas fa-code-branch" aria-hidden="true"></i>
+              <div>
+                <h3>Transparent project history</h3>
+                <p>The repository showcase below loads live from GitHub so employers can review public work directly.</p>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section class="panel">
-        <div class="section-head">
-          <div>
-            <h2>Mobile Apps in Production</h2>
-            <p class="section-subtitle">Applications available on iOS and Android.</p>
+      <section class="section-band section-tint" id="experience">
+        <div class="section-inner">
+          <div class="section-head split-head">
+            <div>
+              <p class="section-kicker">Experience</p>
+              <h2>Built around practical product work</h2>
+              <p class="section-subtitle">A focused skill set for teams that need someone who can build, ship, and keep improving user-facing software.</p>
+            </div>
+            <a href="./assets/Hunter_Monaghan_Resume_Latest.pdf" target="_blank" rel="noopener noreferrer" class="text-link">
+              Resume PDF
+              <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            </a>
           </div>
-        </div>
-        <div class="cards">
-          <article class="project-card">
-            <div class="project-header">
-              <h3>Storage Treasures</h3>
-              <span class="project-type">Mobile App</span>
-            </div>
-            <p class="project-description">Online auction platform for storage units.</p>
-            <div class="link-row">
-              <a href="https://apps.apple.com/us/app/storagetreasures-auction-app/id6448074082" target="_blank" rel="noopener noreferrer" class="button-link">
-                <i class="fab fa-apple"></i>
-                App Store
-              </a>
-              <a href="https://play.google.com/store/apps/details?id=com.opentech.storagetreasures&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="button-link">
-                <i class="fab fa-android"></i>
-                Play Store
-              </a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-header">
-              <h3>Storage Genie</h3>
-              <span class="project-type">Mobile App</span>
-            </div>
-            <p class="project-description">Storage unit management solution for operators and customers.</p>
-            <div class="link-row">
-              <a href="https://apps.apple.com/us/app/storage-genie/id1266354633" target="_blank" rel="noopener noreferrer" class="button-link">
-                <i class="fab fa-apple"></i>
-                App Store
-              </a>
-              <a href="https://play.google.com/store/apps/details?id=com.opentech.storagegenie&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="button-link">
-                <i class="fab fa-android"></i>
-                Play Store
-              </a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-header">
-              <h3>Manager Genie</h3>
-              <span class="project-type">Mobile App</span>
-            </div>
-            <p class="project-description">Property management tools built for efficiency and real-time workflows.</p>
-            <div class="link-row">
-              <a href="https://apps.apple.com/us/app/manager-genie/id6463749332" target="_blank" rel="noopener noreferrer" class="button-link">
-                <i class="fab fa-apple"></i>
-                App Store
-              </a>
-              <a href="https://play.google.com/store/apps/details?id=com.opentech.managergenie&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="button-link">
-                <i class="fab fa-android"></i>
-                Play Store
-              </a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-header">
-              <h3>Safeguard Access Plus</h3>
-              <span class="project-type">Mobile App</span>
-            </div>
-            <p class="project-description">Hands-free facility access experience built to streamline self-storage entry.</p>
-            <div class="link-row">
-              <a href="https://apps.apple.com/us/app/safeguard-access-plus/id6572315194" target="_blank" rel="noopener noreferrer" class="button-link">
-                <i class="fab fa-apple"></i>
-                App Store
-              </a>
-              <a href="https://play.google.com/store/apps/details?id=com.safeguard.accessplus&hl=en_US" target="_blank" rel="noopener noreferrer" class="button-link">
-                <i class="fab fa-android"></i>
-                Play Store
-              </a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-header">
-              <h3>StorageUnlocked</h3>
-              <span class="project-type">Mobile App</span>
-            </div>
-            <p class="project-description">Touch-free access companion app for StorageMart facilities.</p>
-            <div class="link-row">
-              <a href="https://apps.apple.com/us/app/storageunlocked/id1525635336" target="_blank" rel="noopener noreferrer" class="button-link">
-                <i class="fab fa-apple"></i>
-                App Store
-              </a>
-              <a href="https://play.google.com/store/apps/details?id=com.storagemart.genie&hl=en_US" target="_blank" rel="noopener noreferrer" class="button-link">
-                <i class="fab fa-android"></i>
-                Play Store
-              </a>
-            </div>
-          </article>
+          <div class="capability-grid">
+            <article class="capability-card">
+              <p class="capability-icon"><i class="fas fa-display" aria-hidden="true"></i></p>
+              <h3>Frontend Engineering</h3>
+              <p>React interfaces, responsive CSS, polished UI states, accessibility basics, and component-driven implementation.</p>
+            </article>
+            <article class="capability-card">
+              <p class="capability-icon"><i class="fas fa-mobile-screen" aria-hidden="true"></i></p>
+              <h3>Mobile Delivery</h3>
+              <p>React Native and Expo experience across production app listings, store links, and cross-platform user workflows.</p>
+            </article>
+            <article class="capability-card">
+              <p class="capability-icon"><i class="fas fa-server" aria-hidden="true"></i></p>
+              <h3>Backend Foundations</h3>
+              <p>Node.js, Express, SQL, API integration, authentication-aware app flows, and practical debugging habits.</p>
+            </article>
+            <article class="capability-card">
+              <p class="capability-icon"><i class="fas fa-diagram-project" aria-hidden="true"></i></p>
+              <h3>Project Ownership</h3>
+              <p>Public repositories, deployed websites, game prototypes, and coursework projects that show breadth and follow-through.</p>
+            </article>
+          </div>
+          <div class="tool-stack" aria-label="Technology stack">
+            <span>React</span>
+            <span>React Native</span>
+            <span>Expo</span>
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>SQL</span>
+            <span>JavaScript</span>
+            <span>Python</span>
+            <span>Java</span>
+            <span>C#</span>
+            <span>Git</span>
+            <span>GitHub Pages</span>
+          </div>
         </div>
       </section>
 
-      <!-- <section class="panel">
-        <div class="section-head">
-          <div>
-            <h2>Featured Web Projects</h2>
-            <p class="section-subtitle">Selected builds with deployment and source links.</p>
+      <section class="section-band" id="featured-work">
+        <div class="section-inner">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">Featured Work</p>
+              <h2>Production mobile apps</h2>
+              <p class="section-subtitle">Applications available on iOS and Android, with direct public listings for employer review.</p>
+            </div>
+          </div>
+          <div class="cards cards-featured">
+            <article class="project-card">
+              <div class="project-header">
+                <div>
+                  <p class="project-type">Mobile App</p>
+                  <h3>Storage Treasures</h3>
+                </div>
+              </div>
+              <p class="project-description">Online auction platform for storage units with public iOS and Android listings.</p>
+              <div class="link-row">
+                <a href="https://apps.apple.com/us/app/storagetreasures-auction-app/id6448074082" target="_blank" rel="noopener noreferrer" class="button-link">
+                  <i class="fab fa-apple" aria-hidden="true"></i>
+                  App Store
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.opentech.storagetreasures&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="button-link">
+                  <i class="fab fa-google-play" aria-hidden="true"></i>
+                  Play Store
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-header">
+                <div>
+                  <p class="project-type">Mobile App</p>
+                  <h3>Storage Genie</h3>
+                </div>
+              </div>
+              <p class="project-description">Storage unit management solution for operators and customers.</p>
+              <div class="link-row">
+                <a href="https://apps.apple.com/us/app/storage-genie/id1266354633" target="_blank" rel="noopener noreferrer" class="button-link">
+                  <i class="fab fa-apple" aria-hidden="true"></i>
+                  App Store
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.opentech.storagegenie&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="button-link">
+                  <i class="fab fa-google-play" aria-hidden="true"></i>
+                  Play Store
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-header">
+                <div>
+                  <p class="project-type">Mobile App</p>
+                  <h3>Manager Genie</h3>
+                </div>
+              </div>
+              <p class="project-description">Property management tools built for efficiency and real-time workflows.</p>
+              <div class="link-row">
+                <a href="https://apps.apple.com/us/app/manager-genie/id6463749332" target="_blank" rel="noopener noreferrer" class="button-link">
+                  <i class="fab fa-apple" aria-hidden="true"></i>
+                  App Store
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.opentech.managergenie&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="button-link">
+                  <i class="fab fa-google-play" aria-hidden="true"></i>
+                  Play Store
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-header">
+                <div>
+                  <p class="project-type">Mobile App</p>
+                  <h3>Safeguard Access Plus</h3>
+                </div>
+              </div>
+              <p class="project-description">Hands-free facility access experience built to streamline self-storage entry.</p>
+              <div class="link-row">
+                <a href="https://apps.apple.com/us/app/safeguard-access-plus/id6572315194" target="_blank" rel="noopener noreferrer" class="button-link">
+                  <i class="fab fa-apple" aria-hidden="true"></i>
+                  App Store
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.safeguard.accessplus&hl=en_US" target="_blank" rel="noopener noreferrer" class="button-link">
+                  <i class="fab fa-google-play" aria-hidden="true"></i>
+                  Play Store
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-header">
+                <div>
+                  <p class="project-type">Mobile App</p>
+                  <h3>StorageUnlocked</h3>
+                </div>
+              </div>
+              <p class="project-description">Touch-free access companion app for StorageMart facilities.</p>
+              <div class="link-row">
+                <a href="https://apps.apple.com/us/app/storageunlocked/id1525635336" target="_blank" rel="noopener noreferrer" class="button-link">
+                  <i class="fab fa-apple" aria-hidden="true"></i>
+                  App Store
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.storagemart.genie&hl=en_US" target="_blank" rel="noopener noreferrer" class="button-link">
+                  <i class="fab fa-google-play" aria-hidden="true"></i>
+                  Play Store
+                </a>
+              </div>
+            </article>
           </div>
         </div>
-        <div class="cards">
-          <article class="project-card">
-            <div class="project-header">
-              <h3>DockSplit</h3>
-              <span class="project-type">Web App</span>
-            </div>
-            <p class="project-description">Full-stack web application built with React and Node.js.</p>
-            <p class="project-note">Private source repository. Public GitHub profile is linked below.</p>
-            <div class="link-row">
-              <a href="https://jrs-individual-project.vercel.app" target="_blank" rel="noopener noreferrer" class="button-link">
-                <i class="fas fa-external-link-alt"></i>
-                Visit Website
-              </a>
-              <a href="https://github.com/monaghanhc" target="_blank" rel="noopener noreferrer" class="button-link">
-                <i class="fab fa-github"></i>
-                GitHub Profile
-              </a>
-            </div>
-          </article>
+      </section>
 
-          <article class="project-card">
-            <div class="project-header">
-              <h3>Mr.Weather</h3>
-              <span class="project-type">Web App</span>
+      <section class="section-band section-tint" id="web-projects">
+        <div class="section-inner">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">Web and GitHub Projects</p>
+              <h2>Selected public builds</h2>
+              <p class="section-subtitle">A few highlighted projects, followed by the complete live repository index.</p>
             </div>
-            <p class="project-description">Weather-focused full-stack app built with React, Express.js, and Node.js.</p>
-            <div class="link-row">
-              <a href="https://github.com/monaghanhc/react.js/tree/master/Final-Weather-App_Hunter-Monaghan/Mr.Weather" target="_blank" rel="noopener noreferrer" class="button-link">
-                <i class="fab fa-github"></i>
-                View Code
-              </a>
-            </div>
-          </article>
-
-
-
-          <article class="project-card">
-            <div class="project-header">
-              <h3>Space Ship Game</h3>
-              <span class="project-type">Game</span>
-            </div>
-            <p class="project-description">Arcade-style game prototype built with Processing.js.</p>
-            <div class="link-row">
-              <a href="https://github.com/monaghanhc/spaceshipGame" target="_blank" rel="noopener noreferrer" class="button-link">
-                <i class="fab fa-github"></i>
-                View Code
-              </a>
-            </div>
-          </article>
-        </div>
-      </section> -->
-
-      <section class="panel" id="github-repositories">
-        <div class="section-head">
-          <div>
-            <h2>All GitHub Repositories</h2>
-            <p class="section-subtitle">
-              This list is loaded live from <a href="https://github.com/monaghanhc" target="_blank" rel="noopener noreferrer">@monaghanhc</a> and includes every public repository.
-            </p>
           </div>
-          <div class="repo-controls">
-            <label class="control">
-              <span>Search</span>
-              <input id="repo-search" type="search" placeholder="Find a repository">
-            </label>
-            <label class="control">
-              <span>Language</span>
-              <select id="repo-language">
-                <option value="all">All languages</option>
-              </select>
-            </label>
-            <label class="control">
-              <span>Sort</span>
-              <select id="repo-sort">
-                <option value="updated">Recently updated</option>
-                <option value="stars">Most stars</option>
-                <option value="name">Name (A-Z)</option>
-              </select>
-            </label>
+          <div class="cards">
+            <article class="project-card project-card-strong">
+              <div class="project-header">
+                <div>
+                  <p class="project-type">GitHub Pages</p>
+                  <h3>FixLocal Website</h3>
+                </div>
+              </div>
+              <p class="project-description">Public website deployment connected to the FixLocal_Website repository.</p>
+              <div class="link-row">
+                <a href="https://monaghanhc.github.io/FixLocal_Website/" target="_blank" rel="noopener noreferrer" class="button-link">
+                  <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                  Visit Website
+                </a>
+                <a href="https://github.com/monaghanhc/FixLocal_Website" target="_blank" rel="noopener noreferrer" class="button-link">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  View Code
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-header">
+                <div>
+                  <p class="project-type">Portfolio</p>
+                  <h3>Portfolio Website</h3>
+                </div>
+              </div>
+              <p class="project-description">Main portfolio site with a live GitHub repository index and employer-focused project links.</p>
+              <div class="link-row">
+                <a href="https://monaghanhc.github.io/" target="_blank" rel="noopener noreferrer" class="button-link">
+                  <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                  Live Site
+                </a>
+                <a href="https://github.com/monaghanhc/monaghanhc.github.io" target="_blank" rel="noopener noreferrer" class="button-link">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  View Code
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-header">
+                <div>
+                  <p class="project-type">Full-Stack Project</p>
+                  <h3>Mr.Weather</h3>
+                </div>
+              </div>
+              <p class="project-description">Weather-focused app work built with React, Express.js, and Node.js.</p>
+              <div class="link-row">
+                <a href="https://github.com/monaghanhc/react.js/tree/master/Final-Weather-App_Hunter-Monaghan/Mr.Weather" target="_blank" rel="noopener noreferrer" class="button-link">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  View Code
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-header">
+                <div>
+                  <p class="project-type">Game Prototype</p>
+                  <h3>Space Ship Game</h3>
+                </div>
+              </div>
+              <p class="project-description">Arcade-style game prototype built with Processing.js.</p>
+              <div class="link-row">
+                <a href="https://github.com/monaghanhc/spaceshipGame" target="_blank" rel="noopener noreferrer" class="button-link">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  View Code
+                </a>
+              </div>
+            </article>
           </div>
         </div>
-        <p id="repo-status" class="repo-status" role="status" aria-live="polite">Loading repositories...</p>
-        <div id="repo-grid" class="repo-grid" hidden></div>
+      </section>
+
+      <section class="section-band repo-section" id="github-repositories">
+        <div class="section-inner">
+          <div class="section-head split-head">
+            <div>
+              <p class="section-kicker">Complete Repository Index</p>
+              <h2>All GitHub Repositories</h2>
+              <p class="section-subtitle">
+                Loaded live from <a href="https://github.com/monaghanhc" target="_blank" rel="noopener noreferrer">@monaghanhc</a>, including public code, repo metadata, and project website links when available.
+              </p>
+            </div>
+            <div class="repo-controls">
+              <label class="control">
+                <span>Search</span>
+                <input id="repo-search" type="search" placeholder="Find a repository">
+              </label>
+              <label class="control">
+                <span>Language</span>
+                <select id="repo-language">
+                  <option value="all">All languages</option>
+                </select>
+              </label>
+              <label class="control">
+                <span>Sort</span>
+                <select id="repo-sort">
+                  <option value="updated">Recently updated</option>
+                  <option value="stars">Most stars</option>
+                  <option value="name">Name (A-Z)</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <p id="repo-status" class="repo-status" role="status" aria-live="polite">Loading repositories...</p>
+          <div id="repo-grid" class="repo-grid" hidden></div>
+        </div>
       </section>
     </main>
 
     <footer class="footer" id="contact">
-      <h2>Contact</h2>
-      <p class="footer-note">For recruiting conversations, email is the fastest way to reach me.</p>
-      <div class="social-links">
-        <a href="https://github.com/monaghanhc" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-github"></i>
-          GitHub
-        </a>
-        <a href="https://www.linkedin.com/in/hunter-monaghan-7b039a130/" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-linkedin"></i>
-          LinkedIn
-        </a>
-        <a href="mailto:hunter.monaghan5@gmail.com" target="_blank" rel="noopener noreferrer">
-          <i class="fas fa-envelope"></i>
-          Email
-        </a>
+      <div class="section-inner footer-inner">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2>Interested in building together?</h2>
+          <p class="footer-note">For recruiting conversations, email is the fastest way to reach me.</p>
+        </div>
+        <div class="social-links">
+          <a href="mailto:hunter.monaghan5@gmail.com">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            Email
+          </a>
+          <a href="https://github.com/monaghanhc" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github" aria-hidden="true"></i>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/hunter-monaghan-7b039a130/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+            LinkedIn
+          </a>
+          <a href="./assets/Hunter_Monaghan_Resume_Latest.pdf" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-file-lines" aria-hidden="true"></i>
+            Resume
+          </a>
+        </div>
       </div>
     </footer>
   </div>
