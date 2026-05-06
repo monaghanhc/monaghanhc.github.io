@@ -2,7 +2,8 @@
 const REPO_PAGE_SIZE = 100;
 const REPO_SITE_OVERRIDES = {
   FixLocal_Website: "https://monaghanhc.github.io/FixLocal_Website/",
-  "react.js": "https://monaghanhc.github.io/react.js/"
+  "react.js": "https://monaghanhc.github.io/react.js/",
+  spaceshipGame: "https://monaghanhc.github.io/spaceshipGame/"
 };
 
 const repoGrid = document.getElementById("repo-grid");
