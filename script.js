@@ -4,7 +4,8 @@ const REPO_SITE_OVERRIDES = {
   FixLocal_Website: "https://monaghanhc.github.io/FixLocal_Website/",
   "react.js": "https://monaghanhc.github.io/react.js/",
   spaceshipGame: "https://monaghanhc.github.io/spaceshipGame/",
-  "Skyhook-Runner": "https://monaghanhc.github.io/Skyhook-Runner/"
+  "Skyhook-Runner": "https://monaghanhc.github.io/Skyhook-Runner/",
+  "Websocket-Game": "https://desktops-architectural-told-permalink.trycloudflare.com"
 };
 
 const repoGrid = document.getElementById("repo-grid");
