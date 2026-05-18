@@ -5,7 +5,14 @@ const REPO_SITE_OVERRIDES = {
   "react.js": "https://monaghanhc.github.io/react.js/",
   spaceshipGame: "https://monaghanhc.github.io/spaceshipGame/",
   "Skyhook-Runner": "https://monaghanhc.github.io/Skyhook-Runner/",
-  "Websocket-Game": "https://amendment-stress-forms-both.trycloudflare.com"
+  "Websocket-Game": "https://amendment-stress-forms-both.trycloudflare.com",
+  "Video-Chat": "https://monaghanhc.github.io/Video-Chat/"
+};
+const REPO_DOWNLOAD_OVERRIDES = {
+  "Video-Chat": "https://github.com/monaghanhc/Video-Chat/releases/latest"
+};
+const REPO_DESCRIPTION_OVERRIDES = {
+  "Video-Chat": "Realtime video chat app with an installable web experience and Windows desktop release."
 };
 
 const repoGrid = document.getElementById("repo-grid");
@@ -55,6 +62,14 @@ function createMetaItem(iconClass, labelText) {
 
 function getRepoWebsiteUrl(repo) {
   return REPO_SITE_OVERRIDES[repo.name] || repo.homepage || "";
+}
+
+function getRepoDownloadUrl(repo) {
+  return REPO_DOWNLOAD_OVERRIDES[repo.name] || "";
+}
+
+function getRepoDescription(repo) {
+  return REPO_DESCRIPTION_OVERRIDES[repo.name] || repo.description || "No description provided.";
 }
 
 function setStatus(message, isError = false) {
@@ -191,7 +206,7 @@ function renderRepos() {
 
     const description = document.createElement("p");
     description.className = "repo-description";
-    description.textContent = repo.description || "No description provided.";
+    description.textContent = getRepoDescription(repo);
 
     const meta = document.createElement("ul");
     meta.className = "repo-meta";
@@ -226,6 +241,19 @@ function renderRepos() {
       websiteIcon.setAttribute("aria-hidden", "true");
       websiteLink.append(websiteIcon, " Website");
       links.append(websiteLink);
+    }
+
+    const downloadUrl = getRepoDownloadUrl(repo);
+    if (downloadUrl) {
+      const downloadLink = document.createElement("a");
+      downloadLink.href = downloadUrl;
+      downloadLink.target = "_blank";
+      downloadLink.rel = "noopener noreferrer";
+      const downloadIcon = document.createElement("i");
+      downloadIcon.className = "fas fa-download";
+      downloadIcon.setAttribute("aria-hidden", "true");
+      downloadLink.append(downloadIcon, " Download");
+      links.append(downloadLink);
     }
 
     card.append(header, description, meta, links);
