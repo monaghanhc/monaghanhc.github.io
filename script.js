@@ -6,6 +6,7 @@ const REPO_SITE_OVERRIDES = {
   spaceshipGame: "https://monaghanhc.github.io/spaceshipGame/",
   "Skyhook-Runner": "https://monaghanhc.github.io/Skyhook-Runner/",
   "Websocket-Game": "https://amendment-stress-forms-both.trycloudflare.com",
+  makeitcompliantpython: "https://monaghanhc.github.io/makeitcompliantpython/",
   "Video-Chat": "https://monaghanhc.github.io/Video-Chat/"
 };
 const REPO_DOWNLOAD_OVERRIDES = {
